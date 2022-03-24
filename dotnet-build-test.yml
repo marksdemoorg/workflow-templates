@@ -1,10 +1,7 @@
-name: Mark Demo Organization CI
+name: .NET Build/Test CI
 
 on:
-  push:
-    branches: [ $default-branch ]
-  pull_request:
-    branches: [ $default-branch ]
+  workflow-call:
 
 jobs:
   build:
